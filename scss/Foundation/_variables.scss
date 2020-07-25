@@ -1,0 +1,63 @@
+
+// 背景
+$bgc: rgba(255, 255, 255, 0.83);
+
+// テキスト色
+$textc: #333;
+
+// ボタンカラー
+$btn-bgc: #000;
+
+// フォントスタイル
+$fz-base: 16px;
+$ff-base: 'Montserrat', 'Noto Sans JP', sans-serif;
+$fw-base: 500;
+$lh-base: 1.6;
+
+// レイアウト幅
+$layout-width-inner: 1100px;
+
+// ブレークポイント
+$breakpoints: (
+  "sp": "(max-width: 768px)",
+  // "tab": "(min-width: 769px) and (max-width: #{$layout-width-inner - 1px})",
+  "pc": "(min-width: #{$layout-width-inner})"
+  );
+
+
+//mixin
+//position中央寄せ
+@mixin cc($top:50%, $left:50%) {
+	text-align: center;
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translate(-50%, -50%);
+}
+/*例
+.text {
+	@include cc;
+}
+.text {
+	@include cc(40%, 20%);
+}
+*/
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)}  {
+    @content;
+  }
+}
+
+// 割り算						// 分子				// 分母
+@function division($numerator, $denominator) {
+  @return $numerator / $denominator;
+}
+// （例）line-height: division(34,16);→行間/フォントサイズ
+// （例）letter-spacing: division(34,1000);→文字間(AV)/1000em
+
+
+// vw計算
+@function vw($width, $px) {
+  @return $px / ($width - 1) * 100vw;
+}

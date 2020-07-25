@@ -1,0 +1,237 @@
+.top-page{
+  // 共通スタイル
+  .section-wrapper{
+    padding: 60px 0;
+  }
+  .section-title{
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: division(68,1000) + em;
+    margin-bottom: 30px;
+  }
+
+  // ファーストビュー
+  .first-view{
+    height: 100vh;
+    .first-view-content{
+      background-image: url(../../images/kv-img.jpg);
+      width: 76%;
+      height: 86%;
+      background-size: cover;
+      background-position: center 0;
+      position: relative;
+    }
+    .copy-wrap{
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(50%, -50%);
+      color:#fff;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .copy-jp{
+      margin-bottom: 4px;
+    }
+    .copy-company{
+      margin-bottom: 10px;
+    }
+    .main-copy{
+      font-size: 72px;
+      line-height: division(86,72);
+    }
+  }
+
+  .first-view-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 54%;
+    height: 100vh;
+    background-color: #222;
+    z-index: -1;
+  }
+
+  // aboutセクション
+  .section-wrapper:first-of-type{
+    padding-top: 120px;
+    position: relative;
+    .section-inner{
+      background-image: url(../../images/about-img.jpg);
+      padding: 110px 0 110px 50px;
+      background-size: cover;
+    }
+    .about-content{
+      max-width: 590px;
+      padding: 50px 30px;
+      background-color: rgba(255,255,255,.95);
+    }
+    .about-text{
+      line-height: division(32,16);
+    }
+  }
+
+  .section-wrapper:first-of-type::after{
+    display: block;
+    content: "";
+    width: 100vw;
+    height: 160px;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  // works、cultureセクション
+  .l-section-wrapper{
+    padding: 60px 0;
+    background-color: #f2f2f2;
+    .l-section-inner{
+      display: flex;
+      justify-content: space-between;
+    }
+    .works-img,.culture-img{
+      margin-bottom: 30px;
+    }
+  }
+
+  // topicsセクション
+  .topics-list{
+    max-width: 700px;
+    margin-left: auto;
+  }
+  .topic-item{
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+  }
+  .topic-date{
+    font-size: 10px;
+    color: #cecece;
+  }
+  .topic-title{
+    font-size: 14px;
+  }
+  .more-btn{
+    margin-left: auto;
+  }
+
+  // contactセクション
+  .section-wrapper:last-of-type{
+    padding-bottom: 120px;
+    background-color: #f2f2f2;
+    .section-inner{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .contact-content{
+      width: 40%;
+    }
+    .contact-text{
+      line-height: division(32,16);
+    }
+    .contact-img{
+      width: 52.7%;
+    }
+  }
+
+
+  // SP版の記述
+  @include mq('sp'){
+
+    // ファーストビュー
+    .first-view{
+      .first-view-content{
+        background-image: url(../../images/kv-img_sp.jpg);
+      }
+      .copy-wrap{
+        position: absolute;
+        right: -15%;
+        transform: translate(0,-50%);
+        font-size: 20px;
+      }
+      .copy-jp{
+        margin-bottom: 4px;
+        font-size: 16px;
+      }
+      .copy-company{
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+      .main-copy{
+        font-size: 56px;
+        line-height: division(53,56);
+        letter-spacing: division(63,1000) + em;
+      }
+    }
+
+    // aboutセクション
+    .section-wrapper:first-of-type{
+      padding: 80px 0 0;
+      .section-inner{
+        padding: 60px 4vw;
+      }
+      .about-content{
+        margin: 0 auto;
+      }
+      .about-text{
+        font-size: 14px;
+      }
+    }
+
+    // works、cultureセクション
+    .l-section-wrapper{
+      padding-bottom: 40px;
+    }
+    .l-section-inner{
+      flex-direction: column;
+      padding: 0 4vw;
+      align-items: flex-start;
+      .s-section-wrapper:first-of-type{
+        margin-bottom: 80px;
+      }
+    }
+    .s-section-wrapper{
+      .more-btn{
+        margin-left: 0;
+      }
+    }
+    .works-text,.culture-text{
+      font-size: 14px;
+    }
+
+    // topicsセクション
+    .section-inner{
+      padding: 0 4vw;
+      .more-btn{
+        margin-left: 0;
+      }
+    }
+
+    // contactセクション
+    .section-wrapper:last-of-type{
+      padding-bottom: 80px;
+      .section-inner{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 0 4vw;
+      }
+      .contact-content{
+        margin-top: 30px;
+        width: 510px;
+        max-width: 100%;
+      }
+      .contact-text{
+        font-size: 14px;
+      }
+      .contact-img{
+        width: 520px;
+        max-width: 100%;
+      }
+    }
+
+  }
+
+}

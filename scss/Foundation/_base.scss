@@ -1,0 +1,35 @@
+/*
+サイトを構成する上で、デザインの基本の下地、土台となるスタイルを定義
+基本的にタグ自体にスタイルを定義すること。
+*/
+body{
+  font-size: $fz-base;
+  font-family: $ff-base;
+  color: $textc;
+}
+
+// imgには100%して、その外側にmax-widthを指定するとレスポンシブが楽になる
+img{
+  max-width: 100%;
+}
+svg{
+  width: 100%;
+}
+a{
+  display: inline-block;
+}
+// ラジオボタンのスタイル変更を有効に
+[type="radio"] {
+  -webkit-appearance:none;
+  appearance: none;
+}
+
+textarea{
+  resize: none;
+}
+
+// チェックボックスのスタイル変更を有効に
+[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+}

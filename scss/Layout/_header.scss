@@ -1,0 +1,144 @@
+// ヘッダーロゴ
+.header-logo{
+  position: fixed;
+  top: 30px;
+  left: 4vw;
+  width: 260px;
+  z-index: 10;
+}
+
+// ハンバーガーボタン
+.drawer-btn{
+  position: fixed;
+  top: 36px;
+  right: 4vw;
+  display: flex;
+  align-items: center;
+  z-index: 30;
+  .bar{
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 22px;
+    border-radius: 1px;
+    &:first-child{
+      transform: translateY(-4px);
+      transition: transform .3s;
+    }
+    &:nth-child(2){
+      top: 50%;
+    }
+    &:last-child{
+      transform: translateY(4px);
+      transition: transform .3s;
+    }
+  }
+  .drawer-text{
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 5px;
+  }
+}
+
+// ヘッダーナビメニュー
+.header-nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 36.1vw;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 120px 0 0;
+  background-color:rgba(34,34,34,.95);
+  transform: translateX(100%);// 画面外右に100%ずらした状態
+  transition: transform .3s,opacity .3s;
+  z-index: 20;
+  .header-item{
+    margin-bottom: 30px;
+    &:first-of-type{
+      margin-bottom: 40px;
+    }
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+    a{
+      color: #fff;
+    }
+  }
+}
+
+
+// 以下jQueryで追加
+// ハンバーガーボタン開いた時
+.bar:first-child.cross{
+  transform: translateY(2px)rotate(30deg);
+  transition: transform .3s;
+}
+
+.bar:nth-child(2).cross{
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.bar:last-child.cross{
+  transform: translateY(-2px)rotate(-30deg);
+  transition: transform .3s;
+}
+
+// ヘッダーナビメニュー開いた時
+body.noscroll{
+  overflow: hidden;
+}
+
+.header-nav.open{
+  transform: translateX(0);
+  transition: transform .3s,opacity .3s;
+}
+
+.header-musk{
+  display: none;
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:rgba(0,0,0,.5);
+  z-index: 10;
+}
+
+// スクロール時ロゴのカラー変更
+.header-logo.black svg path{
+  fill: #333;
+}
+
+// スクロール時ハンバーガーボタンのカラー変更
+.drawer-btn.black .bar{
+  background-color: #333;
+  transition: background-color .3s;
+}
+
+.drawer-btn.black .drawer-text{
+  color: #333;
+  transition: color .3s;
+}
+
+
+// SP版記述(768px以下)
+@include mq('sp'){
+  .header-logo {
+    top: 20px;
+    width: 180px;
+  }
+  .drawer-btn{
+    top: 28px;
+  }
+  .header-nav{
+    width: 67.6vw;
+    padding-top: 10vh;
+  }
+}
