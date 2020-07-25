@@ -3,7 +3,7 @@
 
 ### 開発の経緯
 デザインカンプからの模写コーディング練習で制作｡<br>
-クリ★スタ[コーディング課題上級編](https://crestadesign.org/cording-third)｡
+クリ★スタ｢[コーディング課題上級編]｣(https://crestadesign.org/cording-third)｡
 
 ### ポイント
 ・コーポレートサイト｡<br>
