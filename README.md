@@ -14,6 +14,6 @@
 ・Googleマップ埋め込み｡<br>
 
 ### 使用言語
-HTML、CSS(SCSS)、jQuery
+HTML / CSS(SCSS) / jQuery
 
 ### [→実際のサイト](https://cresta-jyo-kyu.tosshii-portfolio.com)
