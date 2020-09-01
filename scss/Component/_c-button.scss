@@ -9,9 +9,8 @@
   font-weight: bold;
   text-align: center;
   margin-top: 30px;
-}
-
-.more-btn:hover{
-  opacity: .7;
+  &:hover{
+    opacity: .7;
   transition: .3s;
+  }
 }

@@ -4,7 +4,7 @@
     height: 60vh;
     min-height: 450px;
     .first-view-content{
-      background-image: url(../../images/heading-img_contact.jpg);
+      background-image: url(../images/heading-img_contact.jpg);
       width: 76.4%;
       height: 86%;
       background-size: cover;
@@ -130,7 +130,7 @@
         height: 20px;
         vertical-align: -3px;
         &:checked{
-          background-image: url(../../images/icon_chek.svg);
+          background-image: url(../images/icon_chek.svg);
           background-repeat: no-repeat;
         }
       }
@@ -156,7 +156,7 @@
     }
   }
 
-  
+
   // SP版の記述
   @include mq('sp'){
     // ファーストビュー
@@ -169,7 +169,6 @@
         }
       }
     }
-
     // コンタクトフォーム
     .contact-wrapper{
       .form-item{
@@ -188,7 +187,5 @@
         font-size: 14px;
       }
     }
-
   }
-
 }

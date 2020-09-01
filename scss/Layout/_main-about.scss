@@ -15,7 +15,7 @@
     height: 60vh;
     min-height: 450px;
     .first-view-content{
-      background-image: url(../../images/heading-img_about.jpg);
+      background-image: url(../images/heading-img_about.jpg);
       width: 76.4%;
       height: 86%;
       background-size: cover;
@@ -143,7 +143,6 @@
     .section-wrapper{
       padding: 40px 0;
     }
-
     // ファーストビュー
     .first-view{
       .copy-wrap{
@@ -156,7 +155,6 @@
         font-size: 16px;
       }
     }
-
     // visionセクション
     .section-wrapper:first-of-type{
       padding-top: 80px;
@@ -164,7 +162,6 @@
         font-size: 14px;
       }
     }
-
     // messageセクション
     .section-wrapper:nth-of-type(2){
       .section-inner{
@@ -182,12 +179,10 @@
         line-height: division(28,14);
       }
     }
-
   }
 
 
   @media screen and (max-width: 480px){
-
     // ファーストビュー
     .first-view{
       .copy-wrap{
@@ -197,14 +192,12 @@
         }
       }
     }
-
     // visionセクション
     .section-wrapper:first-of-type{
       .section-inner{
         padding: 0 4vw;
       }
     }
-
     // messageセクション
     .section-wrapper:nth-of-type(2){
       .section-inner{
@@ -223,7 +216,6 @@
         }
       }
     }
-
     // companyセクション
     .section-wrapper:last-of-type{
       padding-bottom: 80px;
@@ -234,7 +226,5 @@
         padding-top: 140%;
       }
     }
-
   }
-
 }

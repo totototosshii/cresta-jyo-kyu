@@ -14,7 +14,7 @@
   .first-view{
     height: 100vh;
     .first-view-content{
-      background-image: url(../../images/kv-img.jpg);
+      background-image: url(../images/kv-img.jpg);
       width: 76%;
       height: 86%;
       background-size: cover;
@@ -57,7 +57,7 @@
     padding-top: 120px;
     position: relative;
     .section-inner{
-      background-image: url(../../images/about-img.jpg);
+      background-image: url(../images/about-img.jpg);
       padding: 110px 0 110px 50px;
       background-size: cover;
     }
@@ -144,7 +144,7 @@
     // ファーストビュー
     .first-view{
       .first-view-content{
-        background-image: url(../../images/kv-img_sp.jpg);
+        background-image: url(../images/kv-img_sp.jpg);
       }
       .copy-wrap{
         position: absolute;

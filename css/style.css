@@ -747,7 +747,7 @@ body.noscroll {
 }
 
 .top-page .first-view .first-view-content {
-  background-image: url(../../images/kv-img.jpg);
+  background-image: url(../images/kv-img.jpg);
   width: 76%;
   height: 86%;
   background-size: cover;
@@ -796,7 +796,7 @@ body.noscroll {
 }
 
 .top-page .section-wrapper:first-of-type .section-inner {
-  background-image: url(../../images/about-img.jpg);
+  background-image: url(../images/about-img.jpg);
   padding: 110px 0 110px 50px;
   background-size: cover;
 }
@@ -896,7 +896,7 @@ body.noscroll {
 
 @media (max-width: 768px) {
   .top-page .first-view .first-view-content {
-    background-image: url(../../images/kv-img_sp.jpg);
+    background-image: url(../images/kv-img_sp.jpg);
   }
   .top-page .first-view .copy-wrap {
     position: absolute;
@@ -1003,7 +1003,7 @@ body.noscroll {
 }
 
 .about-page .first-view .first-view-content {
-  background-image: url(../../images/heading-img_about.jpg);
+  background-image: url(../images/heading-img_about.jpg);
   width: 76.4%;
   height: 86%;
   background-size: cover;
@@ -1223,7 +1223,7 @@ body.noscroll {
 }
 
 .contact-page .first-view .first-view-content {
-  background-image: url(../../images/heading-img_contact.jpg);
+  background-image: url(../images/heading-img_contact.jpg);
   width: 76.4%;
   height: 86%;
   background-size: cover;
@@ -1382,7 +1382,7 @@ body.noscroll {
 }
 
 .contact-page .contact-wrapper .checkbox input:checked {
-  background-image: url(../../images/icon_chek.svg);
+  background-image: url(../images/icon_chek.svg);
   background-repeat: no-repeat;
 }
 
