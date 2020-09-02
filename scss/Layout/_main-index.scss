@@ -53,6 +53,16 @@
   .section-wrapper:first-of-type{
     padding-top: 120px;
     position: relative;
+    &:after{
+      display: block;
+      content: "";
+      width: 100vw;
+      height: 160px;
+      background-color: #f2f2f2;
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+    }
     .section-inner{
       background-image: url(../images/about-img.jpg);
       padding: 110px 0 110px 50px;
@@ -67,16 +77,6 @@
       line-height: division(32,16);
     }
   }
-  .section-wrapper:first-of-type::after{
-    display: block;
-    content: "";
-    width: 100vw;
-    height: 160px;
-    background-color: #f2f2f2;
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-  }
   // works、cultureセクション
   .l-section-wrapper{
     padding: 60px 0;
@@ -90,25 +90,27 @@
     }
   }
   // topicsセクション
-  .topics-list{
-    max-width: 700px;
-    margin-left: auto;
-  }
-  .topic-item{
-    margin-bottom: 30px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #ddd;
-    font-weight: bold;
-  }
-  .topic-date{
-    font-size: 10px;
-    color: #cecece;
-  }
-  .topic-title{
-    font-size: 14px;
-  }
-  .more-btn{
-    margin-left: auto;
+  .topics-content{
+    .topics-list{
+      max-width: 700px;
+      margin-left: auto;
+    }
+    .topic-item{
+      margin-bottom: 30px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #ddd;
+      font-weight: bold;
+    }
+    .topic-date{
+      font-size: 10px;
+      color: #cecece;
+    }
+    .topic-title{
+      font-size: 14px;
+    }
+    .more-btn{
+      margin-left: auto;
+    }
   }
   // contactセクション
   .section-wrapper:last-of-type{

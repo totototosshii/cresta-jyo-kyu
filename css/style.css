@@ -795,6 +795,17 @@ body.noscroll {
   position: relative;
 }
 
+.top-page .section-wrapper:first-of-type:after {
+  display: block;
+  content: "";
+  width: 100vw;
+  height: 160px;
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
 .top-page .section-wrapper:first-of-type .section-inner {
   background-image: url(../images/about-img.jpg);
   padding: 110px 0 110px 50px;
@@ -809,17 +820,6 @@ body.noscroll {
 
 .top-page .section-wrapper:first-of-type .about-text {
   line-height: 2;
-}
-
-.top-page .section-wrapper:first-of-type::after {
-  display: block;
-  content: "";
-  width: 100vw;
-  height: 160px;
-  background-color: #f2f2f2;
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
 }
 
 .top-page .l-section-wrapper {
@@ -840,28 +840,28 @@ body.noscroll {
   margin-bottom: 30px;
 }
 
-.top-page .topics-list {
+.top-page .topics-content .topics-list {
   max-width: 700px;
   margin-left: auto;
 }
 
-.top-page .topic-item {
+.top-page .topics-content .topic-item {
   margin-bottom: 30px;
   padding-bottom: 12px;
   border-bottom: 1px solid #ddd;
   font-weight: bold;
 }
 
-.top-page .topic-date {
+.top-page .topics-content .topic-date {
   font-size: 10px;
   color: #cecece;
 }
 
-.top-page .topic-title {
+.top-page .topics-content .topic-title {
   font-size: 14px;
 }
 
-.top-page .more-btn {
+.top-page .topics-content .more-btn {
   margin-left: auto;
 }
 
