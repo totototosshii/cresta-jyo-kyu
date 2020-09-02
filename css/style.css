@@ -947,7 +947,7 @@ body.noscroll {
   .top-page .l-section-inner .s-section-wrapper:first-of-type {
     margin-bottom: 80px;
   }
-  .top-page .s-section-wrapper .more-btn {
+  .top-page .l-section-inner .s-section-wrapper .more-btn {
     margin-left: 0;
   }
   .top-page .works-text, .top-page .culture-text {

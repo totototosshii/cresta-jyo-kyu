@@ -9,7 +9,6 @@
     letter-spacing: division(68,1000) + em;
     margin-bottom: 30px;
   }
-
   // ファーストビュー
   .first-view{
     height: 100vh;
@@ -41,7 +40,6 @@
       line-height: division(86,72);
     }
   }
-
   .first-view-bg{
     position: absolute;
     top: 0;
@@ -51,7 +49,6 @@
     background-color: #222;
     z-index: -1;
   }
-
   // aboutセクション
   .section-wrapper:first-of-type{
     padding-top: 120px;
@@ -70,7 +67,6 @@
       line-height: division(32,16);
     }
   }
-
   .section-wrapper:first-of-type::after{
     display: block;
     content: "";
@@ -81,7 +77,6 @@
     bottom: 0;
     z-index: -1;
   }
-
   // works、cultureセクション
   .l-section-wrapper{
     padding: 60px 0;
@@ -94,7 +89,6 @@
       margin-bottom: 30px;
     }
   }
-
   // topicsセクション
   .topics-list{
     max-width: 700px;
@@ -116,7 +110,6 @@
   .more-btn{
     margin-left: auto;
   }
-
   // contactセクション
   .section-wrapper:last-of-type{
     padding-bottom: 120px;
@@ -140,7 +133,6 @@
 
   // SP版の記述
   @include mq('sp'){
-
     // ファーストビュー
     .first-view{
       .first-view-content{
@@ -166,7 +158,6 @@
         letter-spacing: division(63,1000) + em;
       }
     }
-
     // aboutセクション
     .section-wrapper:first-of-type{
       padding: 80px 0 0;
@@ -180,7 +171,6 @@
         font-size: 14px;
       }
     }
-
     // works、cultureセクション
     .l-section-wrapper{
       padding-bottom: 40px;
@@ -189,19 +179,18 @@
       flex-direction: column;
       padding: 0 4vw;
       align-items: flex-start;
-      .s-section-wrapper:first-of-type{
-        margin-bottom: 80px;
-      }
-    }
-    .s-section-wrapper{
-      .more-btn{
-        margin-left: 0;
+      .s-section-wrapper{
+        &:first-of-type{
+          margin-bottom: 80px;
+        }
+        .more-btn{
+          margin-left: 0;
+        }
       }
     }
     .works-text,.culture-text{
       font-size: 14px;
     }
-
     // topicsセクション
     .section-inner{
       padding: 0 4vw;
@@ -209,7 +198,6 @@
         margin-left: 0;
       }
     }
-
     // contactセクション
     .section-wrapper:last-of-type{
       padding-bottom: 80px;
@@ -231,7 +219,5 @@
         max-width: 100%;
       }
     }
-
   }
-
 }
