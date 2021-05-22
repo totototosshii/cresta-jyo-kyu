@@ -556,7 +556,6 @@ textarea {
 
 .drawer-btn .bar:first-child {
   -webkit-transform: translateY(-4px);
-      -ms-transform: translateY(-4px);
           transform: translateY(-4px);
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
@@ -570,7 +569,6 @@ textarea {
 
 .drawer-btn .bar:last-child {
   -webkit-transform: translateY(4px);
-      -ms-transform: translateY(4px);
           transform: translateY(4px);
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
@@ -598,7 +596,6 @@ textarea {
   padding: 120px 0 0;
   background-color: rgba(34, 34, 34, 0.95);
   -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: opacity .3s,-webkit-transform .3s;
   transition: opacity .3s,-webkit-transform .3s;
@@ -625,7 +622,6 @@ textarea {
 
 .bar:first-child.cross {
   -webkit-transform: translateY(2px) rotate(30deg);
-      -ms-transform: translateY(2px) rotate(30deg);
           transform: translateY(2px) rotate(30deg);
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
@@ -641,7 +637,6 @@ textarea {
 
 .bar:last-child.cross {
   -webkit-transform: translateY(-2px) rotate(-30deg);
-      -ms-transform: translateY(-2px) rotate(-30deg);
           transform: translateY(-2px) rotate(-30deg);
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
@@ -655,7 +650,6 @@ body.noscroll {
 
 .header-nav.open {
   -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
           transform: translateX(0);
   -webkit-transition: opacity .3s,-webkit-transform .3s;
   transition: opacity .3s,-webkit-transform .3s;
@@ -760,7 +754,6 @@ body.noscroll {
   top: 50%;
   right: 0;
   -webkit-transform: translate(50%, -50%);
-      -ms-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
   color: #fff;
   font-weight: bold;
@@ -834,10 +827,15 @@ body.noscroll {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 20px;
 }
 
 .top-page .l-section-wrapper .works-img, .top-page .l-section-wrapper .culture-img {
   margin-bottom: 30px;
+}
+
+.top-page .l-section-wrapper .s-section-wrapper:first-of-type {
+  margin-right: 60px;
 }
 
 .top-page .topics-content .topics-list {
@@ -902,7 +900,6 @@ body.noscroll {
     position: absolute;
     right: -15%;
     -webkit-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
             transform: translate(0, -50%);
     font-size: 20px;
   }
@@ -1030,7 +1027,6 @@ body.noscroll {
   top: 50%;
   right: 0;
   -webkit-transform: translate(50%, -50%);
-      -ms-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
   color: #fff;
   font-weight: bold;
@@ -1147,7 +1143,6 @@ body.noscroll {
   }
   .about-page .first-view .copy-wrap {
     -webkit-transform: translate(30%, -50%);
-        -ms-transform: translate(30%, -50%);
             transform: translate(30%, -50%);
   }
   .about-page .first-view .main-copy {
@@ -1181,7 +1176,6 @@ body.noscroll {
 @media screen and (max-width: 480px) {
   .about-page .first-view .copy-wrap {
     -webkit-transform: translate(25%, -50%);
-        -ms-transform: translate(25%, -50%);
             transform: translate(25%, -50%);
   }
   .about-page .first-view .copy-wrap .main-copy {
@@ -1250,7 +1244,6 @@ body.noscroll {
   top: 50%;
   right: 0;
   -webkit-transform: translate(50%, -50%);
-      -ms-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
   color: #fff;
   font-weight: bold;
@@ -1412,7 +1405,6 @@ body.noscroll {
 @media (max-width: 768px) {
   .contact-page .first-view .copy-wrap {
     -webkit-transform: translate(25%, -50%);
-        -ms-transform: translate(25%, -50%);
             transform: translate(25%, -50%);
   }
   .contact-page .first-view .copy-wrap .main-copy {
